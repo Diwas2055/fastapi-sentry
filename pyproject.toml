@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "fastapi-sentry"
+version = "0.1.0"
+description = ""
+authors = ["Diwash Bhandari <diwash.bhandari@codavatar.tech>"]
+readme = "README.md"
+packages = [{include = "fastapi_sentry"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = {extras = ["all"], version = "^0.103.1"}
+sentry-sdk = {extras = ["fastapi"], version = "^1.31.0"}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
